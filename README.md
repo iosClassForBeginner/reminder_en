@@ -65,7 +65,7 @@ https://www.meetup.com/iOS-Development-Meetup-for-Beginner/
 ```Swift
 //  Created by Sam on 2018-02-02.
 
-// VERY IMPORTANT: DO NOT COPY/PASTE code to your app. Try following the lecture and writing the code yourself and look at available choises in each method you use. I have intentionally renamed a few things, so copy pasting will break your code.
+// VERY IMPORTANT: DO NOT COPY/PASTE code to your app. Try following the lecture and writing the code yourself and look at available choices in each method you use. I have intentionally renamed a few things, so copy pasting will break your code.
 import UIKit
 import UserNotifications
 
@@ -82,7 +82,8 @@ class ViewController: UIViewController
     {
         super.viewDidLoad()
         
-        // Assign UITextFieldDelegates to both UITetFields. We want them to dismiss keyboard when their return key is pressed
+        // Assign UITextFieldDelegates to both UITetFields. We want them to dismiss keyboard when their return key is pressed.
+        // It is required for our ViewController to adopt UITextFieldDelegate protocol. So we have done it in the extension section below.
         remindAbout.delegate = self
         details.delegate = self
         
@@ -96,7 +97,7 @@ class ViewController: UIViewController
             if granted
             {
                 print("We have access to notifications.")
-                // We can use this to enabled a previously disabled "Set reminder" button so user can now set a notification. Otherwise they shouldnt be able to do it. We are not implementing it for this lecture.
+                // We can use this to enabled a previously disabled "Set reminder" button so user can now set a notification. Otherwise they shouldn't be able to do it. We are not implementing it for this lecture.
                 // You can do it as a challenge.
                 // Hint: connect the "set reminder" button to this view controller and on viewDidLoad disable the button
             }
@@ -111,11 +112,11 @@ class ViewController: UIViewController
         }
     }
     
-    // We are going to assign this method to BOTH of our sliders and we will differenciate them by their tags.
+    // We are going to assign this method to BOTH of our sliders and we will differentiate them by their tags.
     // Right click drag from BOTH sliders to this function.
     @IBAction func sliderMoved(_ sender: UISlider)
     {
-        // In the storyboard we have set the tags for each slider. Now we want to check which slider is making the request.
+        // In the storyboard we have set the tags for each slider. Now we want to check which slider is making the call.
         switch sender.tag
         {
         case 1:
@@ -138,7 +139,7 @@ class ViewController: UIViewController
         content.categoryIdentifier = "Reminder"
         
         
-        // We are setting up some criterias to match with for triggering the notification.
+        // We are setting up some criteria's to match with for triggering the notification.
         // Things you can look for include but not limited to year, month, day, hour, minute, second, nanosecond, weekday, weekOfMonth, weekOfYear, yearForWeekOfYear
         var dateComponents = DateComponents()
         dateComponents.hour = hour
