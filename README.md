@@ -74,6 +74,9 @@ class ViewController: UIViewController
     @IBOutlet weak var remindAbout: UITextField!
     @IBOutlet weak var details: UITextField!
     @IBOutlet weak var timeDisplay: UILabel!
+    
+    
+    // We use global variables that can be accessed by all functions inside this class
     var hour: Int = 0
     var minute: Int = 0
     var center: UNUserNotificationCenter!
