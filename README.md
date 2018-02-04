@@ -37,8 +37,8 @@ https://www.meetup.com/iOS-Development-Meetup-for-Beginner/
 
 1-2. Add two sliders to the view.
 > <details><summary>How to add a slider to the storyboad</summary><div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/reminder_en/blob/master/vids/vid4.gif" /></div></details>
+> Add another slider for "MM" label. This time set maximum value to be 59
 > <details><summary>How to add tags to sliders</summary><div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/reminder_en/blob/master/vids/vid5.gif" /></div></details>
-> Add another slider for "MM" label
 
 1-3. Add two texfields to the view.
 > <details><summary>How to add a textfield to the storyboad</summary><div style="text-align:center"><img src ="https://github.com/iosClassForBeginner/reminder_en/blob/master/vids/vid6.gif" /></div></details>
